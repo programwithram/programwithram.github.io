@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="/code/code.css">
+	<link rel="stylesheet" href="/css/nav.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3d button using html and css</title>
+	<style>
+		article {
+			color: #333 !important;
+			display: flex;
+			flex-direction: column;
+			gap: 64px;
+			margin: 64px auto;
+			margin-left: 30px;
+			/* max-width: 1000px; */
+		}
+
+		article p {
+			color: hsla(235, 0%, 0%, 1);
+		}
+
+		.code-snippet {
+			background-color: #ededed;
+			border-radius: 10px;
+			padding-top: 20px;
+			margin: 30px !important;
+			padding-bottom: 0px;
+			position: relative;
+			/* overflow: hidden; */
+		}
+
+		/* 		.code-snippet code {
+			background-color: #212529;
+			color: #fff;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 0;
+			font-size: 0.9em;
+			white-space: pre-wrap;
+		} */
+		.copy-btn {
+			position: absolute;
+			top: 1px;
+			right: 0px;
+			padding: 6px 11px;
+			background-color: #ededed;
+			color: #333;
+			border: none;
+			border-radius: 0px 10px 0px 0px;
+			cursor: pointer;
+			font-size: 0.8em;
+			transition: all 0.3s ease;
+		}
+		.output {
+			margin:25px;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			padding: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar">
+		<a href="/" class="nav-logo">
+					&lt;&#47;ProgramWith<span style="color:rgb(87,171,255);">Ram</span>&gt;
+				</a>
+		<ul class="nav-links">
+			<input type="checkbox" id="checkbox_toggle" />
+			<label for="checkbox_toggle" class="hamburger">☰</label>
+			<div class="menu">
+<!-- 				<li class="nav-dropdown">
+	<a href="#" class="dropdown-link">Docs</a>
+	<ul class="dropdown">
+		<li><a href="#">Item</a></li>
+		<li><a href="#">Item</a></li>
+		<li><a href="#">Item</a></li>
+	</ul>
+</li> -->
+				<li><a href="#" class="active">HOME</a></li>
+				<li><a href="#">CONTACT US</a></li>
+<!-- 				<li><a class="btn btn-primary" href="#">Link</a></li> -->
+			</div>
+		</ul>
+	</nav>
+	<article>
+		<h2 style="color:#333;">3D button using html and css</h2>
+		<p>
+			3D buttons are an important aspect of any website design. They not only provide a clean and professional look but also offer an interactive experience for users. With the help of HTML and CSS, you can create stunning 3D buttons that can add a creative touch to your website. In this blog, we will show you how to make a 3D button using HTML and CSS.
+		</p>
+		<p class="code">Step 1: Creating the HTML Structure</p>
+		<p>
+			The first step to creating a 3D button is to create its HTML structure. For this, you will need to create a button element.
+		</p>
+	</article>
+	<div class="code-snippet">
+		<label for="html" style="color:#333;padding:0px;margin:0px;position:absolute;top:8px;left:10px;font-family:monospace;">index.html</label><button class="copy-btn">COPY</button>
+		<pre><code class="language-html">&lt;button&gt;hello world!&lt;/button&gt;</code></pre>
+	</div>
+	<article>
+		<p class="code">Step 2: Adding CSS</p>
+		<p>
+			The next step is to add CSS to your HTML structure. CSS is what will give your button its 3D look.
+		</p>
+	</article>
+	<div class="code-snippet">
+		<label for="html" style="color:#333;padding:0px;margin:0px;position:absolute;top:8px;left:10px;font-family:monospace;">style.css</label><button class="copy-btn">COPY</button>
+		<pre class="line-numbers"><code class="language-css">button{
+	background: #f9f9f9;
+	font-weight: 700;
+	font-style: monospace;
+	text-transform: uppercase;
+	padding: 12px 18px;
+	border-radius: 4px;
+	border: solid 2px #121212;
+	box-shadow: 4px 4px #121212;
+	transition: transform 50ms, box-shadow 50ms;
+}
+		
+button:hover{
+	transform:translate(2px, 2px);
+	box-shadow:2px 2px #121212;
+}</code></pre>
+	</div>
+	<div class="output">
+		<div class="01">Output:</div>
+		<iframe src="https://3D-button.programwithram.repl.co" frameborder="0" width="80%"></iframe>
+	</div>
+	</div>
+	<script src="/js/script.js"></script>
+	<script src="/code/code.js"></script>
+	<div class="footer">© 2023 <a href="#">ProgramWithRam</a></div>
+</body>
+
+</html>
