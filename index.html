@@ -8,73 +8,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ProgramWithRam</title>
 <style>
-.spinner {
- width: 44px;
- height: 44px;
- animation: spinner-y0fdc1 2s infinite ease;
- transform-style: preserve-3d;
-}
+    .loader {
+      border: 15px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 15px solid #3498db;
+      width: 100px;
+      height: 100px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: fixed;
+    }
 
-.spinner > div {
- background-color: rgba(0,77,255,0.2);
- height: 100%;
- position: absolute;
- width: 100%;
- border: 2px solid #004dff;
-}
+    @-webkit-keyframes spin {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
 
-.spinner div:nth-of-type(1) {
- transform: translateZ(-22px) rotateY(180deg);
-}
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
 
-.spinner div:nth-of-type(2) {
- transform: rotateY(-270deg) translateX(50%);
- transform-origin: top right;
-}
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
 
-.spinner div:nth-of-type(3) {
- transform: rotateY(270deg) translateX(-50%);
- transform-origin: center left;
-}
-
-.spinner div:nth-of-type(4) {
- transform: rotateX(90deg) translateY(-50%);
- transform-origin: top center;
-}
-
-.spinner div:nth-of-type(5) {
- transform: rotateX(-90deg) translateY(50%);
- transform-origin: bottom center;
-}
-
-.spinner div:nth-of-type(6) {
- transform: translateZ(22px);
-}
-
-@keyframes spinner-y0fdc1 {
- 0% {
-  transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
- }
-
- 50% {
-  transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
- }
-
- 100% {
-  transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
- }
-}
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 </style>
 </head>
 
 <body>
-<div class="spinner">
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+<div class="loader">
 </div>
 	<nav class="navbar">
 		<a href="/" class="nav-logo">
@@ -114,10 +87,7 @@
 	<script src="/js/script.js"></script>
 <script>
 window.addEventListener('load', function() {
-  const loading = document.querySelector('.spinner');
-  loading.style.display = 'none';
-});
-
+  const loading = document.querySelector('.loader'):
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="programwithram" data-description="Support me on Buy me a coffee!" data-message="Want to help keep our servers running? Buy me a coffee." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
