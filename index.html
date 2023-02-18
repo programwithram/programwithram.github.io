@@ -10,6 +10,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Learn to code online - ProgramWithRam</title>
 <style>
+.nav-alert {
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-weight: 600;
+  background-color:#F25022;
+  color:#f9f9f9;
+}
+
+.nav-alert .nav-alert-delete {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+}
+
+.nav-alert .nav-alert-delete::after {
+  content: "✕";
+}
+
 .loader {
   display: block;
   position: relative;
@@ -135,7 +158,7 @@
 <body>
 <div class="loader" id="loader"></div>
 	<nav class="navbar">
-		<a href="https://programwithram.github.io/" class="nav-logo">
+		<a href="https://programwithram." class="nav-logo">
 			&lt;&#47;ProgramWith<span style="color:rgb(87,171,255);">Ram</span>&gt;
 		</a>
 		<ul class="nav-links">
@@ -156,6 +179,7 @@
 			</div>
 		</ul>
 	</nav>
+<div class="nav-alert" id="nav-alert">Send feedback<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__l4PuBxUOU0zRTZESTBQMzdXRlhQSU05TjNMQlQ0Sy4u">here</a><span class="nav-alert-delete" id="nav-alert-delete"></span></div>
 	<main style="height:100vh;">
 		<div class="container">
 			<div class="card-container">
@@ -176,6 +200,16 @@ var loader = document.getElementById("loader");
  window.addEventListener("load" , function (){
  loader.style.display = "none"
 }) 
+</script>
+<script>
+navAlert = document.getElementById('nav-alert');
+navAlertDelete = document.getElementById('nav-alert-delete');
+
+navAlertDelete.addEventListener("click", deleteNavAlert);
+
+function deleteNavAlert() {
+  navAlert.remove();
+} 
 </script>
 <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="programwithram" data-description="Support me on Buy me a coffee!" data-message="Want to help keep our servers running? Buy me a coffee." data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
