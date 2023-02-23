@@ -190,7 +190,7 @@ body {
 
 .nav-dropdown {
 	position: relative;
-	background-color: var(--background-root);
+	background-color:hotpink;
 	border-radius: 8px;
 	transition: 0.3s;
 }
@@ -212,7 +212,7 @@ body {
 
 .dropdown {
 	z-index: 9999;
-	background-color: var(--background-root);
+	background-color: aqua;
 	border: 1px solid var(--outline-dimmest);
 	padding: 1em 0;
 	position: absolute;
