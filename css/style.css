@@ -131,7 +131,7 @@ body {
 	margin-top: 10px;
 	padding: 8px 15px;
 	font-weight: 600;
-	background-color: var(--accent-primary-dimmer);
+	background-color: aqua;
 	color: var(--foreground-default);
 }
 
