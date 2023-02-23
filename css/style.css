@@ -120,7 +120,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: 15px;
-	background-color: var(--background-root);
+	background-color:red;
 	border-bottom: 1px solid var(--outline-dimmest);
 }
 
@@ -250,7 +250,7 @@ body {
 	font-weight: 800;
 	padding: 4px 10px;
 	border: 1px solid #3C445C;
-	border-radius: 8px;
+	border-radius: 0px;
 	user-select: none;
 	/* transition: 0.3s; */
 }
@@ -1130,7 +1130,7 @@ table tr:nth-child(even) {
 
 .footer {
 	bottom:0;
-	background-color: var(--background-default);
+	background-color:#000;
 	color: var(--foreground-default);
 	text-align: center;
 	font-size: 19px;
